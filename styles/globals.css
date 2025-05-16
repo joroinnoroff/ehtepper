@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.winky-sans {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+input {
+  background: transparent;
+}
+
+.css-1ami7lv-MuiTimelineConnector-root {
+  display: none;
+}
+
+::slotted(grid-body) {
+  font-family: monospace;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f0e8e8;
+    --foreground: #393434;
+  }
+}
+
+
+
+@font-face {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+}
+
+
+
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Custom';
+  scroll-behavior: smooth;
+}
+
+
+h1,
+h2,
+button,
+a {
+  @apply leading-tight tracking-tight;
+  font-family: "Winky Sans", sans-serif;
+}
+
+h1 {
+  @apply font-semibold text-4xl;
+}
+
+h2 {
+  @apply font-semibold text-xl mb-2;
+}
+
+p {
+  @apply leading-normal py-2 text-neutral-900;
+}
+
+section {
+  @apply my-8;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "eirikhammer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/lab": "^6.0.0-beta.14",
+    "@mui/material": "^6.1.6",
+    "@nextui-org/date-picker": "^2.3.7",
+    "@nextui-org/react": "^2.6.8",
+    "@reduxjs/toolkit": "^2.5.0",
+    "@studio-freight/lenis": "^1.0.42",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "framer-motion": "^11.11.11",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.454.0",
+    "next": "15.0.2",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.5.1",
+    "react-redux": "^9.2.0",
+    "stripe": "^17.5.0"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/woocommerce__woocommerce-rest-api": "^1.0.5",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
