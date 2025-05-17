@@ -80,7 +80,7 @@ export default function Nav({ }: NavProps): JSX.Element {
                           />
                         </div>
                       )}
-                      <motion.span variants={slideIn} className={`relative z-10  text-xl lg:text-[46px] font-bold no-underline   transition-all duration-75 ease-in-out   ${activeLink === i ? "" : "opacity-65 text-black"}`}>{title}</motion.span>
+                      <motion.span variants={slideIn} className={`relative z-10  text-xl lg:text-[46px] font-bold no-underline   transition-all ease-in-out hover:text-zinc-50   ${activeLink === i ? "" : "opacity-65 text-zinc-600"}`}>{title}</motion.span>
                     </Link>
                   </motion.div>
                 );
