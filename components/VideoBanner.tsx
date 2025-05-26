@@ -64,7 +64,7 @@ export function VideoBanner() {
     >
       <video
         ref={videoRef}
-        className={`w-full h-3/5 object-cover place-content-center 
+        className={`w-full h-3/5 object-cover place-content-center rounded-lg 
           }`}
         width="1280"
         height="720"
@@ -74,24 +74,25 @@ export function VideoBanner() {
         loop
         muted
       >
-        <source src="/monica.mp4" type="video/mp4" />
+        <source src="/tufting.mp4" type="video/mp4" />
         <track
-          src="/monica.mp4"
+          src="/tufting.mp4"
           kind="subtitles"
           srcLang="en"
           label="English"
         />
         Your browser does not support the video tag.
       </video>
-      <Link href={"https://www.youtube.com/watch?v=CKEdLJ-f0oc&ab_channel=%C3%85seKarlsen"} target='_blank' className='tracking-wide text-lg opacity-90 hover:text-zinc-700 transition-all'>F15 Performance - 19.01.2008</Link>
-
-      <div className="absolute bottom-5 right-5 flex items-center gap-3">
-        <button
-          onClick={togglePlayPause}
-          className="bg-black text-white p-2 rounded-md shadow-md transition-all"
-        >
-          {isPaused ? <Play /> : <Pause />}
-        </button>
+      <div className='flex justify-between mt-4'>
+        <Link href={""} target='_blank' id='Sign' className='tracking-wide text-lg opacity-90 hover:text-zinc-700 transition-all'>Eirik hammer</Link>
+        <div className=" bottom-5 right-5 flex items-center gap-3">
+          <button
+            onClick={togglePlayPause}
+            className="bg-black text-white p-2 rounded-md shadow-md transition-all"
+          >
+            {isPaused ? <Play /> : <Pause />}
+          </button>
+        </div>
 
       </div>
     </div>

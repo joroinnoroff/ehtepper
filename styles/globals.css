@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=WDXL+Lubrifont+TC&display=swap');
 
 .winky-sans {
   font-family: "Winky Sans", sans-serif;
@@ -14,7 +13,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "WDXL Lubrifont TC", sans-serif;
   box-sizing: border-box;
+}
+
+#Sign {
+  font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
 }
 
 :root {
@@ -45,11 +50,10 @@ input {
 
 
 @font-face {
-  font-family: "Winky Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+  src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=WDXL+Lubrifont+TC&display=swap");
 }
 
 
@@ -61,29 +65,4 @@ body {
   background: var(--background);
   font-family: 'Custom';
   scroll-behavior: smooth;
-}
-
-
-h1,
-h2,
-button,
-a {
-  @apply leading-tight tracking-tight;
-  font-family: "Winky Sans", sans-serif;
-}
-
-h1 {
-  @apply font-semibold text-4xl;
-}
-
-h2 {
-  @apply font-semibold text-xl mb-2;
-}
-
-p {
-  @apply leading-normal py-2 text-neutral-900;
-}
-
-section {
-  @apply my-8;
 }

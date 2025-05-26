@@ -6,8 +6,10 @@ import DynModal from './DynModal';
 import Form from './Form';
 import { Button } from './Button';
 import Link from 'next/link';
-import { Hand, Play } from 'lucide-react';
+import { Hand, Mail, Play } from 'lucide-react';
 import Intro from './Intro';
+import { VideoBanner } from './VideoBanner';
+import InfBanner from './InfBanner';
 
 const venues = [
   "The Stenersen Museum",
@@ -42,23 +44,18 @@ const Hero = () => {
       <div className="signature relative  h-full w-full flex items-center justify-between px-2 lg:px-12 gap-2 lg:gap-10">
 
 
-        <div className="video flex flex-col">
-          <div className="videoplaying h-[300px] lg:h-[500px] w-[150px] lg:w-[250px] rounded-md bg-zinc-300">
-            <div className="play p-2">
-              <Play />
-            </div>
+        <div className="video flex flex-col w-full">
+          <div className="videoplayin ">
+            <VideoBanner />
           </div>
         </div>
-        <div className='flex flex-col text-black text-xs lg:text-3xl '>
-          <p className='text-black'>Eirik Hammer</p>
-          <Link href={"mailto:example@email.com"} target='_blank'>example@email.com</Link>
-          <p>10 + Years experience, studied and educated at Strykejernet, Oslo</p>
-          <div className="lg:flexten hidden gap-2">
+        <div className='flex flex-col text-black text-xs lg:text-3xl w-full  lg:w-4/6 xl:w-5/12'>
 
-
-            <span className=' bg-blue-400 text-white rounded-full p-2 text-xs  w-20 flex items-center justify-center'>Tufting </span>
-            <span className=' bg-orange-400 text-white rounded-full p-2 text-xs  w-20 flex items-center justify-center'>Mixed media </span>
-            <span className=' bg-purple-400 text-white rounded-full p-2 text-xs  w-20 flex items-center justify-center'>Handmade </span>
+          <Link href={"mailto:example@email.com"} target='_blank' className='border rounded-full w-fit px-4 py-4 flex items-center gap-2 bg-orange-300 hover:text-zinc-50 text-black transition-all hover:bg-orange-400'>Get in touch <Mail strokeWidth={1.25} /></Link>
+          <span className='text-3xl font-light my-4 text-balance w-3/4 lg:w-full'>10 + Years experience, studied and educated at Strykejernet, Oslo</span>
+          <div className="my-4 ov">
+            <p>Exhibitions at:</p>
+            <InfBanner />
 
           </div>
         </div>
