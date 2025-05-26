@@ -68,7 +68,7 @@ export default function Nav({ }: NavProps): JSX.Element {
                     <Link
                       href={href}
                       onClick={() => handleLinkClick(i)}
-                      className={`p-3 h-fit flex flex-col  ${activeLink === i ? "text-white" : "opacity-65 text-black"}`}
+                      className={`p-4 lg:p-6 h-fit flex flex-col  ${activeLink === i ? "text-white" : "opacity-65 text-black"}`}
                     >
                       {activeLink === i && (
                         <div className="absolute inset-0 z-0">
@@ -76,7 +76,7 @@ export default function Nav({ }: NavProps): JSX.Element {
                             src="/buttonbg.png"
                             alt="Button background"
                             fill
-                            className="object-cover rounded-md" // Make sure the image covers the entire button
+                            className="object-cover rounded-md"
                           />
                         </div>
                       )}

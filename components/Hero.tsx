@@ -51,10 +51,10 @@ const Hero = () => {
         </div>
         <div className='flex flex-col text-black text-xs lg:text-3xl w-full  lg:w-4/6 xl:w-5/12'>
 
-          <Link href={"mailto:example@email.com"} target='_blank' className='border rounded-full w-fit px-4 py-4 flex items-center gap-2 bg-orange-300 hover:text-zinc-50 text-black transition-all hover:bg-orange-400'>Get in touch <Mail strokeWidth={1.25} /></Link>
-          <span className='text-3xl font-light my-4 text-balance w-3/4 lg:w-full'>10 + Years experience, studied and educated at Strykejernet, Oslo</span>
+          <Link href={"mailto:example@email.com"} target='_blank' className='border rounded-full w-fit lg:w-80 justify-center px-4 py-4 flex items-center gap-2 bg-orange-300 hover:text-zinc-50 text-black transition-all hover:bg-orange-400'>Get in touch <Mail strokeWidth={1.25} /></Link>
+          <span className='text-3xl font-light my-4 text-balance w-full lg:w-3/4 xl:w-full'>10 + Years experience, studied and educated at Strykejernet, Oslo</span>
           <div className="my-4 ov">
-            <p>Exhibitions at:</p>
+
             <InfBanner />
 
           </div>
